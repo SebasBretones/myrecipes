@@ -9,7 +9,7 @@ $navbar-default-bg: #073B15;
 }
 
 .jumbotron {
-  background-image: asset-url('cover_image.jpeg');
+  background-image: asset-url('cover_image.jpg');
   background-size: cover;
   height: 300px;
 }
@@ -27,7 +27,7 @@ $navbar-default-bg: #073B15;
   text-decoration: none;
 }
 
-.jumbotron h1, h2 {
+.jumbotron h1, .jumbotron h2 {
   color: #fff;
   text-align: center;
   margin-bottom: 30px;
