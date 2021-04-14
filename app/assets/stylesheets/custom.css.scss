@@ -75,3 +75,20 @@ $navbar-default-bg: #073B15;
     color: #fff;
   }
 }
+
+nav .navbar-nav li a{
+  color: rgb(139, 146, 177) !important;
+  }
+
+.listing {
+
+  list-style: none;
+  padding-left: 0;
+}
+
+.chef-title {
+  color: #073B15;
+  font-weight: bold;
+  font-size: 1.25 em
+
+}

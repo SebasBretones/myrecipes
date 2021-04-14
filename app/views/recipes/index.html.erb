@@ -1,20 +1,10 @@
 <%= render 'shared/page_title', title: "Showing al recipes" %>
 
-<% @recipes.each do |recipe| %>
-<div class="row">
-<div class="col-md-2">
-  <section class="chef_info center">
-    <%= gravatar_for(recipe.chef, size: 130) %>
-  </section>
+<div align="center">
+  <%= will_paginate %>
 </div>
-<div class="col-md-8 well">
-  <h4><%= link_to recipe.name, recipe_path(recipe) %></h4>
-  <p><%= truncate(recipe.description, length: 150) %></p>
-  <p> 
-    <span class="quiet"><small>Created <%= time_ago_in_words(recipe.created_at) %> ago</small> </span>
-  </p>
-</div>
+<%= render 'recipe', obj: @recipes %>
+<div align="center">
+  <%= will_paginate %>
 </div>
 
-
-<% end %>
